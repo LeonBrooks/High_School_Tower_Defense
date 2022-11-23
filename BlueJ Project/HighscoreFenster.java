@@ -65,15 +65,15 @@ public class HighscoreFenster extends JPanel
         FileReader fr = null;
         try{
             fr = new FileReader("daten/IP.txt");
-        }catch(FileNotFoundException f){
-            System.out.println("FEHLER! KEINE IP");
-        }
             
-        BufferedReader br = new BufferedReader(fr);
-        
-        try{
+            BufferedReader br = new BufferedReader(fr);
+            
             client = new TDClient(br.readLine());
             br.close();
+        }catch(FileNotFoundException f){
+            System.out.println("FEHLER! KEINE IP");
+            
+            client = new TDClient("127.0.0.1");
         }catch(IOException e) {
             e.printStackTrace();
         }
