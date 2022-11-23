@@ -17,3 +17,7 @@ The game can be run by executing the `TD_Game.jar` file, however it depends on t
 
 I'm not sure if this is the final version of the game as I seem to recall that we had more curated waves and a higher overall difficulty at the showcase, but I might be wrong about that.
 >Note: The game is coded in German but the instructions are in English
+
+<p align="center">
+<img src="bilder/Sample_Screenshot.png" alt="Startmenu" class="center" width="60%">
+</p>
